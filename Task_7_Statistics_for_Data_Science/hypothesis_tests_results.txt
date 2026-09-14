@@ -1,0 +1,38 @@
+Week 7 Hypothesis Test Results
+Significance level: 0.05
+
+Test Name: One-sample t-test: mean sale vs 100,000
+H0: Mean Total_Sales = 100,000
+H1: Mean Total_Sales != 100,000
+Test Used: one-sample t-test
+Test Statistic: 2.361244
+P-value: 0.0201722
+Decision: Reject H0
+Business Interpretation: The average transaction differs statistically from the 100,000 benchmark.
+
+Test Name: One-way ANOVA: sales across regions
+H0: All regional mean sales are equal
+H1: At least one regional mean differs
+Test Used: one-way ANOVA
+Test Statistic: 2.164363
+P-value: 0.0972368
+Decision: Fail to reject H0
+Business Interpretation: Regional average sales show whether location is associated with different transaction values.
+
+Test Name: Pearson correlation: Price and Total_Sales
+H0: Population correlation is 0
+H1: Population correlation is not 0
+Test Used: Pearson correlation significance test
+Test Statistic: 0.646131
+P-value: 3.88216e-13
+Decision: Reject H0
+Business Interpretation: Price and Total_Sales have a statistically testable linear relationship.
+
+Test Name: Chi-square: Contract and Churn
+H0: Contract and Churn are independent
+H1: Contract and Churn are associated
+Test Used: chi-square test of independence
+Test Statistic: 27.715301
+P-value: 9.58735e-07
+Decision: Reject H0
+Business Interpretation: Contract type can be compared with churn patterns, without claiming causation.

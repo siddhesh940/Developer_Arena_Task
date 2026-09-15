@@ -1,0 +1,4 @@
+  File "d:\Developer_Arena\Week1_Task\Task_11_Advanced_ML_Models\customer_segmentation.py", line 376
+    except ValueError as exc: ValueError:
+                                         ^
+SyntaxError: invalid syntax

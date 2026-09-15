@@ -1,0 +1,104 @@
+d:\Developer_Arena\Week1_Task\Task_11_Advanced_ML_Models\customer_segmentation.py:215: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=counts.index.astype(str), y=counts.values, palette="Set2")
+C:\Users\Rushikesh\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=3.
+  warnings.warn(
+=== DATASET OVERVIEW ===
+Shape: (500, 9)
+Columns: ['CustomerID', 'Tenure', 'MonthlyCharges', 'TotalCharges', 'Contract', 'PaymentMethod', 'PaperlessBilling', 'SeniorCitizen', 'Churn']
+CustomerID          object
+Tenure               int64
+MonthlyCharges       int64
+TotalCharges         int64
+Contract            object
+PaymentMethod       object
+PaperlessBilling    object
+SeniorCitizen        int64
+Churn                int64
+Missing values: {'CustomerID': 0, 'Tenure': 0, 'MonthlyCharges': 0, 'TotalCharges': 0, 'Contract': 0, 'PaymentMethod': 0, 'PaperlessBilling': 0, 'SeniorCitizen': 0, 'Churn': 0}
+Duplicate rows: 0
+Churn distribution: {0: 447, 1: 53}
+CustomerID  Tenure  MonthlyCharges  TotalCharges       Contract    PaymentMethod PaperlessBilling  SeniorCitizen  Churn
+    C00001       6              64          1540       One year      Credit Card               No              1      0
+    C00002      21             113          1753 Month-to-month Electronic Check              Yes              1      0
+    C00003      27              31          1455       Two year      Credit Card               No              1      0
+    C00004      53              29          7150 Month-to-month Electronic Check               No              1      0
+    C00005      16             185          1023       One year Electronic Check               No              1      0
+
+=== CLEANING SUMMARY ===
+Duplicate rows removed: 0
+Missing values after cleaning: {'CustomerID': 0, 'Tenure': 0, 'MonthlyCharges': 0, 'TotalCharges': 0, 'Contract': 0, 'PaymentMethod': 0, 'PaperlessBilling': 0, 'SeniorCitizen': 0, 'Churn': 0}
+
+=== NUMERICAL STATISTICS ===
+           Tenure  MonthlyCharges  TotalCharges  SeniorCitizen
+count  500.000000      500.000000    500.000000     500.000000
+mean    36.532000      113.636000   4237.882000       0.498000
+std     20.667057       51.799903   2260.619837       0.500497
+min      1.000000       20.000000    159.000000       0.000000
+25%     19.000000       67.000000   2237.250000       0.000000
+50%     37.000000      115.000000   4182.500000       0.000000
+75%     54.000000      158.000000   6266.750000       1.000000
+max     71.000000      199.000000   7992.000000       1.000000
+
+=== CATEGORICAL DISTRIBUTIONS ===
+
+Contract:
+Contract
+One Year          186
+Month-To-Month    170
+Two Year          144
+
+PaymentMethod:
+PaymentMethod
+Credit Card         178
+Electronic Check    163
+Bank Transfer       159
+
+PaperlessBilling:
+PaperlessBilling
+No     257
+Yes    243
+
+SeniorCitizen:
+SeniorCitizen
+0    251
+1    249
+
+=== CHURN DISTRIBUTION ===
+Churn
+0    89.4
+1    10.6
+
+K-Means selected K=6
+Inertia values: [4989.708125979392, 4486.758268884523, 4134.151658912511, 3762.740139370808, 3467.208730184746, 3300.3325532627096, 3151.2393655678698]
+Silhouette scores: [0.1652875570413523, 0.1912607695373913, 0.1604013273614499, 0.19158515380588592, 0.21735585745948885, 0.20771514380171124, 0.1996658832294165]
+
+Hierarchical silhouette score: 0.1664
+DBSCAN produced no meaningful clusters for this dataset.
+
+=== SEGMENT PROFILES ===
+ segment  customer_count  customer_percentage  avg_tenure  avg_monthly_charges  avg_total_charges  churn_rate  senior_citizen_pct dominant_contract  dominant_contract_pct dominant_payment  dominant_payment_pct  paperless_billing_yes_pct               segment_name
+       0              75                 15.0       37.13               122.71            4264.80      0.1200              0.4400          One Year                  45.33 Electronic Check                100.00                      100.0 High-Value Loyal Customers
+       1              86                 17.2       36.71               112.20            4190.29      0.0465              0.5000          One Year                  44.19    Bank Transfer                100.00                      100.0 High-Value Loyal Customers
+       2              97                 19.4       37.40               112.58            4490.11      0.1959              0.5670    Month-To-Month                 100.00      Credit Card                 38.14                        0.0 High-Value Loyal Customers
+       3              82                 16.4       37.29               108.83            4357.30      0.1707              0.5000          Two Year                  35.37      Credit Card                100.00                      100.0    Stable Growth Customers
+       4              89                 17.8       37.47               110.46            3761.88      0.0225              0.4719          One Year                 100.00      Credit Card                 38.20                        0.0 High-Value Loyal Customers
+       5              71                 14.2       32.44               116.77            4381.25      0.0704              0.4930          Two Year                 100.00 Electronic Check                 39.44                        0.0  Low-Risk Stable Customers
+Skipping segment 0: Invalid parameter 'model' for estimator RandomForestClassifier(class_weight='balanced', random_state=42). Valid parameters are: ['bootstrap', 'ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'max_samples', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'n_estimators', 'n_jobs', 'oob_score', 'random_state', 'verbose', 'warm_start'].
+Skipping segment 1: Invalid parameter 'model' for estimator RandomForestClassifier(class_weight='balanced', random_state=42). Valid parameters are: ['bootstrap', 'ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'max_samples', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'n_estimators', 'n_jobs', 'oob_score', 'random_state', 'verbose', 'warm_start'].
+Skipping segment 2: Invalid parameter 'model' for estimator RandomForestClassifier(class_weight='balanced', random_state=42). Valid parameters are: ['bootstrap', 'ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'max_samples', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'n_estimators', 'n_jobs', 'oob_score', 'random_state', 'verbose', 'warm_start'].
+Skipping segment 3: Invalid parameter 'model' for estimator RandomForestClassifier(class_weight='balanced', random_state=42). Valid parameters are: ['bootstrap', 'ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'max_samples', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'n_estimators', 'n_jobs', 'oob_score', 'random_state', 'verbose', 'warm_start'].
+Skipping segment 4: Invalid parameter 'model' for estimator RandomForestClassifier(class_weight='balanced', random_state=42). Valid parameters are: ['bootstrap', 'ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'max_samples', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'n_estimators', 'n_jobs', 'oob_score', 'random_state', 'verbose', 'warm_start'].
+Skipping segment 5: Invalid parameter 'model' for estimator RandomForestClassifier(class_weight='balanced', random_state=42). Valid parameters are: ['bootstrap', 'ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'max_samples', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'n_estimators', 'n_jobs', 'oob_score', 'random_state', 'verbose', 'warm_start'].
+Traceback (most recent call last):
+  File "d:\Developer_Arena\Week1_Task\Task_11_Advanced_ML_Models\customer_segmentation.py", line 547, in <module>
+    main()
+    ~~~~^^
+  File "d:\Developer_Arena\Week1_Task\Task_11_Advanced_ML_Models\customer_segmentation.py", line 530, in main
+    model_df, prediction_df = train_segment_models(df_with_clusters, segment_mapping)
+                              ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Developer_Arena\Week1_Task\Task_11_Advanced_ML_Models\customer_segmentation.py", line 412, in train_segment_models
+    raise RuntimeError("No valid segment models were produced from the real data.")
+RuntimeError: No valid segment models were produced from the real data.

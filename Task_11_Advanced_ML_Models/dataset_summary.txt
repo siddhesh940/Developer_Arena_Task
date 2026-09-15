@@ -1,0 +1,11 @@
+shape=(500, 9)
+columns=CustomerID, Tenure, MonthlyCharges, TotalCharges, Contract, PaymentMethod, PaperlessBilling, SeniorCitizen, Churn
+dtypes={'CustomerID': dtype('O'), 'Tenure': dtype('int64'), 'MonthlyCharges': dtype('int64'), 'TotalCharges': dtype('int64'), 'Contract': dtype('O'), 'PaymentMethod': dtype('O'), 'PaperlessBilling': dtype('O'), 'SeniorCitizen': dtype('int64'), 'Churn': dtype('int64')}
+missing={'CustomerID': 0, 'Tenure': 0, 'MonthlyCharges': 0, 'TotalCharges': 0, 'Contract': 0, 'PaymentMethod': 0, 'PaperlessBilling': 0, 'SeniorCitizen': 0, 'Churn': 0}
+duplicates=0
+churn={0: 447, 1: 53}
+contract={'One year': 186, 'Month-to-month': 170, 'Two year': 144}
+payment={'Credit Card': 178, 'Electronic Check': 163, 'Bank Transfer': 159}
+paperless={'No': 257, 'Yes': 243}
+senior={0: 251, 1: 249}
+describe={'Tenure': {'count': 500.0, 'mean': 36.532, 'std': 20.66705664725681, 'min': 1.0, '25%': 19.0, '50%': 37.0, '75%': 54.0, 'max': 71.0}, 'MonthlyCharges': {'count': 500.0, 'mean': 113.636, 'std': 51.79990312662617, 'min': 20.0, '25%': 67.0, '50%': 115.0, '75%': 158.0, 'max': 199.0}, 'TotalCharges': {'count': 500.0, 'mean': 4237.882, 'std': 2260.619837162442, 'min': 159.0, '25%': 2237.25, '50%': 4182.5, '75%': 6266.75, 'max': 7992.0}}

@@ -1,0 +1,104 @@
+CustomerID,Segment,SegmentName,ActualChurn,PredictedChurn,PredictionProbability
+C00162,0,Higher-Value Premium Base,0,0,0.37415781107991597
+C00189,0,Higher-Value Premium Base,0,0,0.07456220216353475
+C00477,0,Higher-Value Premium Base,0,0,0.13977767262617383
+C00075,0,Higher-Value Premium Base,0,0,0.00928799019607843
+C00343,0,Higher-Value Premium Base,0,0,0.07098484472833184
+C00462,0,Higher-Value Premium Base,0,0,0.04128587848281154
+C00296,0,Higher-Value Premium Base,0,0,0.009416666666666667
+C00457,0,Higher-Value Premium Base,0,0,0.11935232200869317
+C00117,0,Higher-Value Premium Base,0,0,0.16355997993761137
+C00458,0,Higher-Value Premium Base,1,1,0.6207239348843588
+C00425,0,Higher-Value Premium Base,0,0,0.004416666666666667
+C00157,0,Higher-Value Premium Base,0,0,0.0318657040365148
+C00338,0,Higher-Value Premium Base,1,1,0.717804298285042
+C00200,0,Higher-Value Premium Base,0,0,0.012325461588184119
+C00102,0,Higher-Value Premium Base,0,0,0.026931967262709897
+C00351,1,Established Customer Base 1,0,0,0.0
+C00384,1,Established Customer Base 1,0,0,0.0
+C00129,1,Established Customer Base 1,0,0,0.0
+C00155,1,Established Customer Base 1,0,0,0.02
+C00018,1,Established Customer Base 1,0,0,0.01
+C00293,1,Established Customer Base 1,0,0,0.05
+C00322,1,Established Customer Base 1,0,0,0.0
+C00470,1,Established Customer Base 1,1,0,0.25
+C00294,1,Established Customer Base 1,0,0,0.02
+C00135,1,Established Customer Base 1,0,0,0.0
+C00420,1,Established Customer Base 1,0,0,0.07
+C00185,1,Established Customer Base 1,0,0,0.0
+C00323,1,Established Customer Base 1,0,0,0.02
+C00387,1,Established Customer Base 1,0,0,0.0
+C00089,1,Established Customer Base 1,0,0,0.01
+C00412,1,Established Customer Base 1,0,0,0.0
+C00013,1,Established Customer Base 1,0,0,0.0
+C00128,1,Established Customer Base 1,0,0,0.03
+C00409,2,Highest Churn Priority,0,0,0.0
+C00355,2,Highest Churn Priority,0,0,0.01
+C00143,2,Highest Churn Priority,0,0,0.02
+C00348,2,Highest Churn Priority,1,1,0.73
+C00192,2,Highest Churn Priority,0,0,0.01
+C00359,2,Highest Churn Priority,0,0,0.02
+C00257,2,Highest Churn Priority,0,0,0.0
+C00181,2,Highest Churn Priority,1,1,0.85
+C00437,2,Highest Churn Priority,0,0,0.01
+C00406,2,Highest Churn Priority,0,0,0.01
+C00008,2,Highest Churn Priority,0,0,0.03
+C00309,2,Highest Churn Priority,1,1,0.87
+C00461,2,Highest Churn Priority,0,0,0.03
+C00009,2,Highest Churn Priority,0,0,0.02
+C00486,2,Highest Churn Priority,0,0,0.02
+C00479,2,Highest Churn Priority,0,0,0.0
+C00455,2,Highest Churn Priority,1,1,0.57
+C00114,2,Highest Churn Priority,0,0,0.0
+C00061,2,Highest Churn Priority,0,0,0.09
+C00113,2,Highest Churn Priority,0,0,0.0
+C00173,3,Lower-Charge Opportunity,0,0,0.07
+C00290,3,Lower-Charge Opportunity,0,0,0.0
+C00291,3,Lower-Charge Opportunity,0,0,0.03
+C00416,3,Lower-Charge Opportunity,0,0,0.01
+C00433,3,Lower-Charge Opportunity,0,0,0.19
+C00382,3,Lower-Charge Opportunity,0,0,0.0
+C00272,3,Lower-Charge Opportunity,0,0,0.0
+C00438,3,Lower-Charge Opportunity,0,0,0.01
+C00080,3,Lower-Charge Opportunity,0,0,0.0
+C00392,3,Lower-Charge Opportunity,0,0,0.03
+C00069,3,Lower-Charge Opportunity,1,0,0.31
+C00190,3,Lower-Charge Opportunity,0,0,0.09
+C00393,3,Lower-Charge Opportunity,1,1,0.76
+C00180,3,Lower-Charge Opportunity,0,0,0.01
+C00424,3,Lower-Charge Opportunity,1,1,0.79
+C00139,3,Lower-Charge Opportunity,0,0,0.05
+C00184,3,Lower-Charge Opportunity,0,0,0.04
+C00339,4,Lowest Churn Stability,0,0,0.1253656563147781
+C00207,4,Lowest Churn Stability,0,0,0.0
+C00333,4,Lowest Churn Stability,0,0,0.3369603721868787
+C00349,4,Lowest Churn Stability,0,0,0.009718309859154929
+C00306,4,Lowest Churn Stability,0,0,0.4158644817759199
+C00408,4,Lowest Churn Stability,0,1,0.7361051866602815
+C00451,4,Lowest Churn Stability,0,0,0.0
+C00289,4,Lowest Churn Stability,0,0,0.1453656563147781
+C00423,4,Lowest Churn Stability,0,0,0.2417484264672656
+C00115,4,Lowest Churn Stability,0,0,0.0
+C00005,4,Lowest Churn Stability,0,0,0.0
+C00023,4,Lowest Churn Stability,0,0,0.0
+C00120,4,Lowest Churn Stability,0,0,0.017934177215189872
+C00108,4,Lowest Churn Stability,0,0,0.29968526903328324
+C00429,4,Lowest Churn Stability,0,0,0.07681174484262432
+C00070,4,Lowest Churn Stability,0,0,0.26142088335253105
+C00445,4,Lowest Churn Stability,0,0,0.009904306220095695
+C00177,4,Lowest Churn Stability,0,0,0.0
+C00091,5,Established Customer Base 2,0,0,0.23
+C00221,5,Established Customer Base 2,0,0,0.0
+C00299,5,Established Customer Base 2,0,0,0.02
+C00201,5,Established Customer Base 2,0,0,0.02
+C00379,5,Established Customer Base 2,0,0,0.0
+C00383,5,Established Customer Base 2,0,0,0.03
+C00450,5,Established Customer Base 2,0,0,0.0
+C00073,5,Established Customer Base 2,0,0,0.09
+C00176,5,Established Customer Base 2,0,0,0.01
+C00123,5,Established Customer Base 2,0,0,0.0
+C00413,5,Established Customer Base 2,0,0,0.05
+C00212,5,Established Customer Base 2,0,0,0.1
+C00280,5,Established Customer Base 2,0,0,0.0
+C00105,5,Established Customer Base 2,1,0,0.07
+C00442,5,Established Customer Base 2,0,0,0.0
